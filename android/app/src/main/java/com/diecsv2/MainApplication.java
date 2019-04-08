@@ -3,6 +3,7 @@ package com.diecsv2;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rnfs.RNFSPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.henninghall.date_picker.DatePickerPackage;
 import com.reactnativedocumentpicker.ReactNativeDocumentPicker;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFSPackage(),
             new RNFetchBlobPackage(),
             new DatePickerPackage(),
             new ReactNativeDocumentPicker()
